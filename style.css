@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.top-panel{
+    background-color: black;
+    width: 100%;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-panel a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar{
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    border-bottom: 1px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img{
+    width: 150px;
+    margin-left: 25px;
+}
+
+.navbar .nav-item{
+    display: inline;
+    padding: 15px 30px;
+    margin: 0px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-item:hover{
+    background-color: aliceblue;
+}
+
+.hero-section{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-section img{
+    width: 500px;
+}
+
+.hero-section .hero-text{
+    width: 40%;
+}
+
+.hero-section .hero-text h2{
+    font-size: 40px;
+}
+
+.hero-section .hero-text p{
+    font-size: 25px;
+    text-align: justify;
+}
+
+@media screen and (min-width: 320px) and (max-width: 380px) {
+    .navbar{
+        height: 80px;
+    }
+    
+    .navbar img{
+        display: none;
+    }
+
+    .navbar ul{
+        padding: 0px;
+    }
+
+    .navbar .nav-item{
+        padding: 5px 10px;
+        margin: 5px;
+    }
+
+    .hero-section{
+        display: block;
+        height: 1800px;
+    }
+
+    .hero-section img{
+        display: block;
+        width: 100%;
+    }
+
+    .hero-section .hero-text{
+        display: block;
+        width: 100%;
+    }
+
+    .hero-section .hero-text h2{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .hero-section .hero-text p{
+        font-size: 20px;
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .navbar ul{
+        padding: 0px;
+    }
+
+    .navbar .nav-item{
+        padding: 15px;
+        margin: 0px 10px;
+    }
+
+    .hero-section img{
+        width: 40%;
+    }
+}
